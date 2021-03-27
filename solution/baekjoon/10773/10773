@@ -1,0 +1,22 @@
+# 문자열 + 스택
+def addStack(s):
+    sum = 0
+    for i in s:
+        sum += int(i)
+
+    return sum
+
+
+stack = []
+n = int(input())
+
+while n > 0:
+    num = input()
+
+    if num != "0":
+        stack.append(num)
+    else:
+        stack.pop()
+    n = n-1
+
+print(addStack(stack))
