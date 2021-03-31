@@ -139,3 +139,15 @@ dmypy.json
 *.vcxproj
 *.filters
 *.user
+*.suo
+*.ipch
+*.exe
+*.recipe
+*.ilk
+*.obj
+*.enc
+*.pdb
+*.lastbuildstate
+*.tlog
+*.txt
+*.idb
