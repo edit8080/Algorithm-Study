@@ -129,3 +129,13 @@ dmypy.json
 .pyre/
 
 .idea
+
+# CPP
+*.db
+*.db-shm
+*.db-wal
+*.opendb
+*.sln
+*.vcxproj
+*.filters
+*.user
