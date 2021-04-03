@@ -5,7 +5,7 @@
 *   4. p1에 대한 십자가를 탐색할 때 방문한 점은 visit 배열에 true로 표기한다.
 *   5. p2에 대한 십자가를 탐색할 때 탐색한 점의 visit 배열이 true 면 false를 return한다.
 * 
-*   시간복잡도 = O(n^4) (n : board의 크기 (width * height), len = n/2)
+*   시간복잡도 = O(n^5) (n : board의 크기 (width * height), len = n/2)
 */
 
 
