@@ -1,7 +1,7 @@
 #
 # 1. 주어진 input의 combination 구한 후 합과 비교
 #
-# 시간복잡도 = O(2^n) (nC1 + ... nCn)
+# 시간복잡도 = O(n*2^n) (nC1 + ... nCn)
 #
 from itertools import combinations
 
