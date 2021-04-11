@@ -12,7 +12,7 @@ for _ in range(n):
 
 max_weight = 0
 count = 0
-for i in range(10000, 1, -1):
+for i in range(10000, 0, -1):
     if rope[i] != 0:
         count += rope[i]
         if max_weight < count * i:
