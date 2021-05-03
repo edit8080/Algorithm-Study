@@ -2,7 +2,7 @@
 # 2. 각 사분면에 맞게 order 값을 증가시키고 4등분씩 분할해 재귀적으로 탐색한다.
 # 3. 탐색할 좌표와 일치하면 order 값을 return 한다.
 #
-# 시간복잡도 = O(lg n)
+# 시간복잡도 = O(log4 n)
 
 
 n, r, c = map(int, input().split(" "))
