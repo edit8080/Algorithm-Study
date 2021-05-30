@@ -62,8 +62,6 @@ void bfs(bottle& capacity) {
 			// C -> B
 			if (b + c < capacity.b) q.push({ a, b + c, 0 });
 			else q.push({ a , capacity.b, b + c - capacity.b });
-
-			cout << "Good!";
 		}
 	}
 }
