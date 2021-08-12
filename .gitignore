@@ -151,3 +151,4 @@ dmypy.json
 *.tlog
 *.txt
 *.idb
+/.project
