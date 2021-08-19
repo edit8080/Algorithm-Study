@@ -6,12 +6,10 @@
  * 시간복잡도 - O(n! * n)
  */
 
-package com.ssafy.swea;
-
 import java.util.*;
 import java.io.*;
 
-public class Solution_d5_1247_최적경로_서울_12반_이태희 {
+public class Solution_1247 {
 	static int compX, compY;
 	static int homeX, homeY;
 	static int[][] customers;
