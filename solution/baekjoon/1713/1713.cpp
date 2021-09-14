@@ -41,7 +41,7 @@ int main() {
 		cin >> recommend;
 		bool in_frame = false;
 
-		// 이미 있다면 추천수 증가
+		// 이미 있다면 추천수 증가 (시간 갱신 x)
 		for (int j = 0; j < (int)frame.size(); j++) {
 			if (recommend == frame[j].num) {
 				frame[j].cnt += 1;
@@ -52,10 +52,10 @@ int main() {
 		if (!in_frame && put >= n)
 			frame[0] = { recommend, 1, i };
 
-		// 여유가 있다면 그냥 넣기
+		// 사진틀 여유가 있다면 그냥 넣기
 		if (!in_frame && put < n) {
 			frame.push_back({ recommend, 1, i });
-			put += 1;
+			put++;
 		}
 
 		// 추천수, 시간순으로 정렬
@@ -64,10 +64,10 @@ int main() {
 
 	// 정렬 후 결과 출력
 	vector<int> result;
-	for (int i = 0; i < n; i++)
+	for (int i = 0; i < (int)frame.size(); i++)
 		result.push_back(frame[i].num);
 
 	sort(result.begin(), result.end());
-	for (int i = 0; i < n; i++)
+	for (int i = 0; i < (int)result.size(); i++)
 		cout << result[i] << ' ';
 }
