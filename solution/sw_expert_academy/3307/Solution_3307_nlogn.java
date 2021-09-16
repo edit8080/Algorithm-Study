@@ -21,14 +21,14 @@ public class Solution_3307_nlogn {
 			for (int i = 0; i < N; i++)
 				num[i] = Integer.parseInt(st.nextToken());
 
-			sb.append('#').append(testCnt).append(' ').append(LCSCnt(num)).append('\n');
+			sb.append('#').append(testCnt).append(' ').append(LISCnt(num)).append('\n');
 		}
 		System.out.println(sb);
 		br.close();
 	}
 
 	// 최장 증가 수열의 길이 구하기 - O(N log N)
-	public static int LCSCnt(int[] num) {
+	public static int LISCnt(int[] num) {
 		int[] LIS = new int[num.length];
 
 		int size = 0; // LIS에 채워지고 있는 원소 개수

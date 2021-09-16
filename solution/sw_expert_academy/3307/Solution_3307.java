@@ -21,25 +21,25 @@ public class Solution_3307 {
 			for (int i = 0; i < N; i++) 
 				num[i] = Integer.parseInt(st.nextToken());			
 
-			sb.append('#').append(testCnt).append(' ').append(LCSCnt(num)).append('\n');
+			sb.append('#').append(testCnt).append(' ').append(LISCnt(num)).append('\n');
 		}
 		System.out.println(sb);
 		br.close();
 	}
 
 	// 최장 증가 수열의 길이 구하기 - O(N^2)
-	public static int LCSCnt(int[] num) {
+	public static int LISCnt(int[] num) {
 		int max = 0;
-		int[] LCS = new int[num.length];
+		int[] LIS = new int[num.length];
 
 		for (int i = 0; i < num.length; i++) {
-			LCS[i] = 1;
+			LIS[i] = 1;
 			
 			for (int j = 0; j < i; j++) {
 				if (num[i] > num[j])
-					LCS[i] = Math.max(LCS[i], LCS[j] + 1);
+					LIS[i] = Math.max(LIS[i], LIS[j] + 1);
 			}
-			max = Math.max(max, LCS[i]);
+			max = Math.max(max, LIS[i]);
 		}
 		return max;
 	}
